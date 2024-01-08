@@ -1455,7 +1455,12 @@ font-family: 'Roboto', sans-serif;  color: #eee;
   font-family: 'Roboto', sans-serif;
   color: #f7f7f7;
 }
+@media only screen and (min-width: 765px) and (max-width: 835px) {
+  .nav-menu > li {
+    margin-left: -2.5px;
+  }
 
+}
   
    
    
