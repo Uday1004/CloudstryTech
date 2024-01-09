@@ -1539,7 +1539,27 @@ font-family: 'Roboto', sans-serif;  color: #eee;
   background-color: #f4f4f4;
   box-shadow: 10px 2px 7px 0px rgb(187 184 184 / 50%);
 }
-
+.map-section{
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.dbox>p>a{
+  color: black;
+}
+.dbox>p>a:hover{
+  color:#3498db;
+}
+.form-group .sub-btn{
+  width: 42%;
+  background-color: #3498db;
+   
+}
+.form-group .sub-btn:hover{
+   border: 1px solid #3498db;
+   background-color: whitesmoke;
+   color: #3498db;
+   
+}
   
    
    
