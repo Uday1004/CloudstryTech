@@ -711,14 +711,20 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #services .title {
-  margin-left: 60px;
-  font-weight: 700;
+ 
+  font-weight:bold;
   margin-bottom: 15px;
-  font-size: 18px;
+  font-size: 27px;
+  text-align: center;
 }
 
 #services .title a {
-  color: #111;
+  color: white;
+
+}
+#services .title a:hover {
+  color: #9babb5;
+
 }
 
 #services .box:hover .title a {
@@ -1461,6 +1467,79 @@ font-family: 'Roboto', sans-serif;  color: #eee;
   }
 
 }
+.image-container {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Adjust the alpha value for the desired blur effect */
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+.img-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.img-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 52%); /* Adjust the alpha value for the desired blur effect */
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.5s ease; /* Added transform property */
+  transform: translateY(20px); /* Initial transform value */
+}
+
+.img-container:hover .overlay {
+  opacity: 1;
+  transform: translateY(0); /* Final transform value on hover */
+}
+/* .i-map{
+  margin-top: 10px;
+} */
+.cont-section{
+  border: 1px solid #cec9c9;
+  border-radius: 9px;
+  background-color: #f4f4f4;
+  box-shadow: 10px 2px 7px 0px rgb(187 184 184 / 50%);
+}
+
   
    
    
