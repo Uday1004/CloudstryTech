@@ -1560,6 +1560,12 @@ font-family: 'Roboto', sans-serif;  color: #eee;
    color: #3498db;
    
 }
+.alert{
+  background-color: #a6cba6;
+  color: #4d4747;
+  text-align: center;
+}
+
   
    
    
