@@ -459,9 +459,15 @@
               <div class="form-group">
                 <label for="msg">Message<span style="color: red;">*</span></label>
                 <textarea id="message" cols="30" rows="7" class="form-control message" required></textarea>
-                <div id="error-msg" style="color: red; font-size: 12px;"></div>
               </div>
-              <div class="alert" style="display: none;">Form submitted successfully!</div>
+               
+              <div id="styledAlert" class="hidden">
+                <div class="alert-content">
+                  <span class="close" onclick="closeAlert()"></span>
+                  <p class="alert-text">Thank you! Your submission has been received!</p>
+                </div>
+              </div> 
+               
               <div class="form-group" >
                 <button type="submit" class="btn btn-primary py-3 px-5 sub-btn" onclick="validateform()">Submit</button>
               </div>
@@ -471,8 +477,8 @@
           <div class="col-md-6 d-flex align-items-stretch">
             <div class="embed-responsive embed-responsive-16by9 m-3 p-3" id="map">
               <iframe class="embed-responsive-item" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-                src="https://www.bing.com/maps/embed?h=400&w=600&cp=22.719568~75.857727&lvl=13&typ=d&sty=r&src=SHELL&FORM=MBEDV8"
-                allowfullscreen></iframe>
+                src="https://www.bing.com/maps/embed?h=481&w=600&cp=22.719568~75.857727&lvl=13&typ=d&sty=r&src=SHELL&FORM=MBEDV8"
+                allowfullscreen style="margin-top: 30px;"></iframe>
               </div>
             </div>
                
@@ -538,10 +544,14 @@
           <div class="col-lg-3 col-md-6 footer-newsletter">
             <h4>Our Newsletter</h4>
             <p>Subscribe to our newsletter to be the first to know about our new insurance and consulting services.</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit"  value="Subscribe">
+           <form class="subscribe-form" name="submit-to-google-sheet" id="newsletter">
+              <div class="form-group">
+                <input type="email"  name="email" required><button type="submit" id="subs"   class="Subs-email">Subscribe</button>
+              </div>
             </form>
+            <span id="msg"></span>
           </div>
+                
           
         </div>
       </div>
@@ -583,6 +593,7 @@
   
   <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
   <script src="js/db.js"></script>
+  <script src="js/Subscripiton-Email.js"></script>
   
 </body>
 </html>

@@ -1565,6 +1565,58 @@ font-family: 'Roboto', sans-serif;  color: #eee;
   color: #4d4747;
   text-align: center;
 }
+.hidden {
+  display: none;
+}
+
+#styledAlert {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%) translateX(-50%);
+  background-color: #3b9edf;
+  color: #ffffff;
+  padding: 20px;
+   
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: 'Roboto','sans-serif';
+  animation: slideIn .5s forwards; /* Animation */
+}
+@keyframes slideIn {
+  to {
+    transform: translate(-50%, -50%) translateX(0);
+  }
+}
+
+.alert-content {
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+  font-size: 18px;
+}
+.alert-text{
+  margin: 0;  
+}
+.Subs-email{
+  background: #3498db;
+    border: 0;
+    width: 35%;
+    padding: 6px 0;
+    text-align: center;
+    color: #fff;
+    transition: 0.3s;
+    cursor: pointer;
+}
 
   
    
