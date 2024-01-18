@@ -1726,7 +1726,7 @@ h2 {
 
 .apply-button {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 10px 15px;
   text-decoration: none;
   color: #fff;
   background-color: #3498db;
@@ -1798,10 +1798,14 @@ h2 {
   color: black;
 }
 .job-card:hover .job-title{
-  color: #3489db; 
   text-decoration: underline #3489db;
-  font-weight: bold;
+  color: #3489db; 
+  /* font-weight: bold; */
 }
+ 
+
+
+
 
  
 

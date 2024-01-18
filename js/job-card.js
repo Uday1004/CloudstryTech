@@ -21,7 +21,7 @@ const jobData = [
 
     // Populate the div with job data
     jobCard.innerHTML = `
-      <div class="job-details">
+      <div class="job-details wow fadeInUp">
         <h2><a href="https://udaysolanki.netlify.app"  class='job-title'>${job.title}</a></h2>
         <p class="company">${job.company}</p>
         <span class="business-area">${job.businessArea}</span>
