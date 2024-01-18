@@ -149,12 +149,14 @@ jQuery(document).ready(function ($) {
   }, { offset: '80%' });
 
   // jQuery counterUp (used in Facts section)
-  $(document).ready(function() {
+   // Wait for the entire document to be ready
+   $(document).ready(function() {
+    // Initialize CounterUp for elements with data-toggle="counter-up"
     $('[data-toggle="counter-up"]').counterUp({
-      delay: 10,
-      time: 1000
+        delay: 10,
+        time: 1000
     });
-  });
+});
 
   // Porfolio isotope and filter
   var portfolioIsotope = $('.portfolio-container').isotope({

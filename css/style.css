@@ -1,8 +1,10 @@
  
+ 
 body {
   background: #fff;
   color: #666666;
   font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -74,7 +76,8 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
   transition: all 0.5s;
   z-index: 997;
-}
+  /* background-color: black; */
+ }
 
 #header.header-scrolled {
   background: rgba(0, 0, 0, 0.9);
@@ -1227,7 +1230,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #team .member .social a:hover {
-  color: #18d26e;
+  color: #3489db;
 }
 
 #team .member .social i {
