@@ -21,7 +21,7 @@ const jobData = [
 
     // Populate the div with job data
     jobCard.innerHTML = `
-      <div class="job-details wow fadeInUp">
+      <div class="job-details">
         <h2><a href="https://udaysolanki.netlify.app"  class='job-title'>${job.title}</a></h2>
         <p class="company">${job.company}</p>
         <span class="business-area">${job.businessArea}</span>
@@ -59,8 +59,7 @@ const jobData = [
     autoplay: true, // Enable autoplay
     autoplayTimeout: 3000, // Set autoplay interval in milliseconds (e.g., 3000 ms = 3 seconds)
     autoplayHoverPause: true, // Pause autoplay on hover
-    animateOut: 'fadeOut', // Add fade out animation
-    animateIn: 'fadeIn' // Add fade in animation
+     
   });
 
   // Custom navigation button events

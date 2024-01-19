@@ -682,7 +682,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #about .about-col h2 a:hover {
-  color: #18d26e;
+  color: #3489db;
 }
 
 #about .about-col p {
@@ -729,7 +729,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 }
 #services .title a:hover {
-  color: #9babb5;
+  color: #8fb2d3;
 
 }
 
@@ -1570,7 +1570,7 @@ font-family: 'Roboto', sans-serif;  color: #eee;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 52%); /* Adjust the alpha value for the desired blur effect */
+  background: rgba(0, 0, 0, 63%); /* Adjust the alpha value for the desired blur effect */
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -1805,6 +1805,7 @@ h2 {
   color: #3489db; 
   /* font-weight: bold; */
 }
+ 
  
 
 
