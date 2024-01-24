@@ -28,7 +28,7 @@ const jobData = [
         <div class="location-and-apply">
           <div class="location-and-apply-details">
             <span class="location">${job.location}</span>
-            <a href="#" class="apply-button">Apply Now</a>
+             
           </div>
         </div>
       </div>
