@@ -43,6 +43,10 @@
 
 <body>
 
+  <div id="loading-overlay">
+    <div class="loader"></div>
+  </div>
+
   <!--==========================
     Header
   ============================-->
@@ -58,7 +62,14 @@
       <ul class="nav-menu">
         <!-- <a><img class="cloudlogo" src="img/cloudslogo.png" alt="loading.."></a> -->
         <li class="menu-active "><a href="/index.html">Home</a></li>
-        <li><a href="#about">Solutions</a></li>
+        <li class="menu-has-children"><a href="#about">Solutions</a>
+          <ul style="font-family:montserrat;">
+            <li><a href="#">IT Strategy Consultancy</a></li>
+            <li><a href="#">Software Services</a></li>
+            <li><a href="#">Product management and QA</a></li>
+             
+          </ul>
+        </li>
         <!-- <li><a href="#services">About us</a></li> -->
         <!-- <li><a href="/underconstruction.html">Technology</a></li> -->
         <li><a href="#career" target="_parent">Career</a></li>
@@ -81,9 +92,9 @@
           <div class="carousel-item active" style="background-image: url('img/intro-carousel/1.jpg');">
             <div class="carousel-container">
               <div class="carousel-content">
-                <h2>Public Ulities</h2>
+                <h2>Public Utilities</h2>
                 <p class="">Within our technology firm, we prioritize user interaction and views. Our public utility feature on the homepage amplifies engagement, providing real-time insights. Seamlessly integrated, it enhances the digital experience, reflecting our commitment to innovation.</p>
-                <a href="#featured-services" class="btn-get-started scrollto">Get Started</a>
+                <a href="" class="btn-get-started scrollto">Get Started</a>
               </div>
             </div>
           </div>
@@ -102,7 +113,7 @@
             <div class="carousel-container">
               <div class="carousel-content">
                 <h2>Government</h2>
-                <p>Citizen participation is the bedrock of effective government. Our homepage fosters interaction with real-time insights, a testament to our unwavering commitment to innovative digital solutions for citizen experiences</p>
+                <p>Citizen participation is the bedrock of effective government. Our homepage fosters interaction with real-time insights, a testament to our unwavering commitment to innovative digital Solutions for citizen experiences</p>
                 <a href="#featured-services" class="btn-get-started scrollto">Get Started</a>
               </div>
             </div>
@@ -146,7 +157,7 @@
               <div class="img">
                 <img src="img/about-mission.jpg" alt="" class="img-fluid">
                 <div class="overlay">
-                  <button class="title btn"><a href="/Career/job-title.html">Learn More</a></button>
+                  <button class="title btn"><a href="/">Learn More</a></button>
                 </div>
               </div>
               <h2 class=" "><a href="#">IT Strategy Consultancy</a></h2>
@@ -171,7 +182,7 @@
               <h2 class=""><a href="#">Software Services</a></h2>
               <p>
 
-                Our software services encompass a comprehensive suite of solutions designed to meet the diverse needs of
+                Our software services encompass a comprehensive suite of Solutions designed to meet the diverse needs of
                 businesses in today's dynamic digital landscape. From custom software development to system integration
                 and maintenance, we offer end-to-end services that ensure efficient operations.
               </p>
@@ -188,7 +199,7 @@
               </div>
               <h2 class=" "><a href="#">Product management and QA</a></h2>
               <p>
-                Unlock seamless collaboration and elevate product excellence with our cutting-edge QA and Product Management solutions. From rigorous testing protocols to strategic product roadmapping, we empower your team to deliver exceptional products on time and within budget.
+                Unlock seamless collaboration and elevate product excellence with our cutting-edge QA and Product Management Solutions. From rigorous testing protocols to strategic product roadmapping, we empower your team to deliver exceptional products on time and within budget.
               </p>
             </div>
           </div>
@@ -247,9 +258,9 @@
                 Our consultancy firm offers IT consultancy services that cover all phases of the software
                 development life cycle, all roles, and all technology stacks. We understand that each
                 organization has unique technology needs, which is why our team of experienced consultants
-                works closely with our clients to provide tailored solutions that meet their specific requirements.
+                works closely with our clients to provide tailored Solutionss that meet their specific requirements.
                 Our technology consultancy services include but are not limited to requirement analysis,
-                solution design, development, testing, deployment, and maintenance.
+                Solutions design, development, testing, deployment, and maintenance.
                 
               </p>
             </div>
@@ -546,6 +557,7 @@
               <div class="form-group">
                 <label for="msg">Message<span style="color: red;">*</span></label>
                 <textarea id="message" cols="30" rows="7" class="form-control message" required></textarea>
+                <div id="error-msg" style="color: red; font-size: 12px;"></div>
               </div>
 
               <div id="styledAlert" class="hidden">
@@ -610,7 +622,7 @@
             <ul>
               <li><i class="ion-ios-arrow-right"></i> <a href="#intro">Home</a></li>
               <li><i class="ion-ios-arrow-right"></i> <a href="#career">Career</a></li>
-              <li><i class="ion-ios-arrow-right"></i> <a href="#services">Services</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#about">Solutions</a></li>
               <li><i class="ion-ios-arrow-right"></i> <a href="#">Terms of service</a></li>
               <li><i class="ion-ios-arrow-right"></i> <a href="#">Privacy policy</a></li>
             </ul>
@@ -627,33 +639,32 @@
               <strong>Email:</strong> <span style="text-decoration: underline;">hr@cloudstrytech.com</span><br>
             </p>
 
-            <div class="social-links">
+            <!-- <div class="social-links">
               <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
               <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
               <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
 
               <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-            </div>
+            </div> -->
 
           </div>
 
           <div class="col-lg-3 col-md-6 footer-newsletter">
-            <h4>Our Newsletter</h4>
-            <p>Subscribe to our newsletter! Be the first to unlock insights, updates, and exclusive on our innovative
-              tech support services</p>
-            <form class="subscribe-form" name="submit-to-google-sheet" id="newsletter">
-              <div class="form-group">
-                <input type="email" name="email" required><button type="submit" id="subs"
-                  class="Subs-email">Subscribe</button>
-              </div>
-            </form>
-            <span id="msg"></span>
+            <h4>Social Links</h4>
+            
+            <div class="social-links">
+              <a href="#"  class="twitter a"><i class="fa fa-twitter"></i></a>
+              <a href="#" class="facebook a"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="instagram a"><i class="fa fa-instagram"></i></a>
+              
+              <a href="#" class="linkedin a"><i class="fa fa-linkedin"></i></a><br><br><br>
+               <a href="mailto:usolanki@cloudstrytech.com" style="color: white;" class="mailus" >Mail Us</a>
+              <span id="msg"></span>
+            </div>
           </div>
 
 
         </div>
-      </div>
-    </div>
 
     <div class="container">
       <div class="copyright">
@@ -702,6 +713,13 @@
   <script src="js/job-card.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <script src="path/to/owl.carousel.min.js"></script>
+
+  <script>
+    window.addEventListener('load', function () {
+      document.getElementById('loading-overlay').style.display = 'none';
+      document.getElementById('content').style.display = 'block';
+    });
+  </script>
 
 
 

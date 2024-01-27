@@ -2,9 +2,12 @@
     function validateform() {
       var inputname = document.getElementById('name')
       var inputemail = document.getElementById('email')
+      var inputemsg = document.getElementById('message')
        
       var errorname = document.getElementById('error-name')
       var erroremail = document.getElementById('error-email')
+      var errormsg = document.getElementById('error-msg')
+
        
        
        
@@ -13,13 +16,20 @@
         errorname.innerHTML='please fill required field'
       } else {
         errorname.innerHTML=''
-        showStyledAlert();
+         
       }
 
       if (inputemail.value == '') {
         erroremail.innerHTML='please fill required field'
       } else {
         erroremail.innerHTML=''
+        
+      }
+
+      if (inputemsg.value == '') {
+        errormsg.innerHTML='please fill required field'
+      } else {
+        errormsg.innerHTML=''
         showStyledAlert();
       }
 

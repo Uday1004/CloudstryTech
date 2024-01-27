@@ -117,7 +117,7 @@ jQuery(document).ready(function ($) {
       // introCarousel.append("<div class='carousel-social-icons'><i class='fab fa-facebook'></i><i class='fab fa-twitter'></i><i class='fab fa-instagram'></i></div>");
     // Initialize the carousel
     introCarousel.carousel({
-      interval: 4000, // Set your desired autoplay interval in milliseconds (e.g., 5000 for 5 seconds)
+      interval: 3500, // Set your desired autoplay interval in milliseconds (e.g., 5000 for 5 seconds)
       pause: "hover" // Pause on hover
     });
 

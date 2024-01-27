@@ -1,12 +1,12 @@
 // Sample JSON data
 const jobData = [
   { "title": "Software Support Engineer", "company": "Information Technology", "businessArea":"Technology",  "location": "hydrabad | India" , "url":"Career/job-title.html" },
-  { "title": "Software Engineer - Java", "company": "Software Development", "businessArea":"Technology",  "location": "Indore | India" , "url":'https://udaysolanki.netlify.app' },
-  { "title": "Senior Software Engineer", "company": "Software Engineering", "businessArea":"Technology",  "location": "Chicago | USA" },
-  { "title": "Senior Quality Analyst", "company": "Software Testing & QA", "businessArea":"Technology",  "location": "Indore | India" },
-  { "title": "Software Engineer - Nodejs/Angular", "company": "Full-Stack Web Development", "businessArea":"Technology",  "location": "Indore | India" },
-  { "title": "Dev Ops Engineer - Google Cloud", "company": "DevOps Engineer", "businessArea":"Technology",  "location": "Indore | India" },
-  { "title": "Data Engineer", "company": "Data Engineering", "businessArea":"Technology",  "location": "Indore | India" }
+  { "title": "Software Engineer - Java", "company": "Software Development", "businessArea":"Technology",  "location": "Indore | India" , "url":'Career/job-title.html' },
+  { "title": "Senior Software Engineer", "company": "Software Engineering", "businessArea":"Technology",  "location": "Chicago | USA","url":'Career/job-title.html' },
+  { "title": "Senior Quality Analyst", "company": "Software Testing & QA", "businessArea":"Technology",  "location": "Indore | India","url":'Career/job-title.html' },
+  { "title": "Software Engineer - Nodejs/Angular", "company": "Full-Stack Web Development", "businessArea":"Technology",  "location": "Indore | India","url":'Career/job-title.html' },
+  { "title": "Dev Ops Engineer - Google Cloud", "company": "DevOps Engineer", "businessArea":"Technology",  "location": "Indore | India","url":'Career/job-title.html' },
+  { "title": "Data Engineer", "company": "Data Engineering", "businessArea":"Technology",  "location": "Indore | India","url":'Career/job-title.html' }
 ];
 
   // Get the container element
@@ -22,7 +22,7 @@ const jobData = [
     // Populate the div with job data
     jobCard.innerHTML = `
       <div class="job-details">
-        <h2><a href="${job.url}"  class='job-title'>${job.title}</a></h2>
+        <h2><a href="${job.url}" target="_blank" class='job-title'>${job.title}</a></h2>
         <p class="company">${job.company}</p>
         <span class="business-area">${job.businessArea}</span>
         <div class="location-and-apply">
