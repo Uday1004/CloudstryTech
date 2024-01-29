@@ -467,6 +467,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
 
+
 #mobile-nav ul li a:hover {
   color: #fff;
 }
@@ -1904,12 +1905,12 @@ h2 {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #080808c8;
+  background: rgb(253, 253, 253);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  z-index: 9999;
+  z-index:1000;
 }
 
 #loader {
@@ -1933,26 +1934,57 @@ h2 {
   left: 5px;
   right: 5px;
   bottom: 5px;
-  border: 8px solid rgba(255, 255, 255, 0.8);
+  border: 8px solid white;
   border-radius: 50%;
+  z-index: 1;
 }
 
 #loader-percentage {
-  font-size: 24px;
+  font-size: 33px;
     margin-top: 20px;
     text-align: center;
-    color: white;
+    color:  rgb(101, 101, 101);
     font-family: 'montserrat' , sans-serif;
 }
 
 #logo-loader {
-  width: 27%;
-  height: auto;
+  width: auto;
+  font-size: 8.5rem;
   opacity: 0;
   transition: opacity 0.5s ease-in-out , filter 1s cubic-bezier(0.4, 0, 0.2, 1);
   filter: blur(10px);
   animation: fadeIn 1s ease-in-out forwards;
+  color: rgb(101, 99, 99);
+  font-family: 'montserrat';
+  font-weight: 700;
 }
+@media (max-width: 576px) {
+  #logo-loader {
+    width: auto;
+    font-size: 4rem;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out , filter 1s cubic-bezier(0.4, 0, 0.2, 1);
+    filter: blur(10px);
+    animation: fadeIn 1s ease-in-out forwards;
+    color: rgb(101, 99, 99);
+    font-family: 'montserrat';
+    font-weight: 700;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  #logo-loader {
+    width: auto;
+    font-size: 5.5rem;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out , filter 1s cubic-bezier(0.4, 0, 0.2, 1);
+    filter: blur(10px);
+    animation: fadeIn 1s ease-in-out forwards;
+    color: rgb(101, 99, 99);
+    font-family: 'montserrat';
+    font-weight: 700;
+  }
+}
+  
 
 @keyframes fadeIn {
   from { opacity: 0; }
