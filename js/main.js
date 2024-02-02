@@ -198,3 +198,26 @@ jQuery(document).ready(function ($) {
   });
 
 });
+
+
+// nabar problem 
+document.addEventListener("DOMContentLoaded", function() {
+
+  var header = document.getElementById("header");
+  if(header) {
+    var headerScrolled = function() {
+      if (window.scrollY > 100) {
+        header.classList.add("header-scrolled");
+      } else {
+        header.classList.remove("header-scrolled");
+      }
+    };
+    headerScrolled();
+    window.addEventListener("scroll", headerScrolled);
+  }
+
+  var url = window.location.href;
+  if (url.indexOf("#") > -1) {
+    header.classList.add("header-scrolled");
+  }
+});
