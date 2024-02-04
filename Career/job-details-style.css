@@ -180,6 +180,9 @@ body p {
       text-overflow: clip;
     }
   }
+  .section-header{
+    margin-top: 15px;
+  }
   .section-header h3 {
     font-size: 32px;
     color: #111;

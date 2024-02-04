@@ -5,49 +5,49 @@ const jobData = [
     company: "Information Technology",
     businessArea: "Technology",
     location: "hydrabad | India",
-    url: "Career/job-title.html",
+    url: "Career/Software Support Engineer.html",
   },
   {
     title: "Software Engineer - Java",
     company: "Software Development",
     businessArea: "Technology",
     location: "Indore | India",
-    url: "Career/job-title.html",
+    url: "Career/Software Engineer - Java.html ",
   },
   {
     title: "Senior Software Engineer",
     company: "Software Engineering",
     businessArea: "Technology",
     location: "Chicago | USA",
-    url: "Career/job-title.html",
+    url: "Career/Senior Sofrware Engineer.html",
   },
   {
     title: "Senior Quality Analyst",
     company: "Software Testing & QA",
     businessArea: "Technology",
     location: "Indore | India",
-    url: "Career/job-title.html",
+    url: "Career/senior quality analyst.html",
   },
   {
     title: "Software Engineer - Nodejs/Angular",
     company: "Full-Stack Web Development",
     businessArea: "Technology",
     location: "Indore | India",
-    url: "Career/job-title.html",
+    url: "Career/Software Engineer-NodejsAngular.html",
   },
   {
     title: "Dev Ops Engineer - Google Cloud",
     company: "DevOps Engineer",
     businessArea: "Technology",
     location: "Indore | India",
-    url: "Career/job-title.html",
+    url: "Career/Dev Ops Engineer - Google Cloud.html",
   },
   {
     title: "Data Engineer",
     company: "Data Engineering",
     businessArea: "Technology",
     location: "Indore | India",
-    url: "Career/job-title.html",
+    url: "Career/data engineer.html",
   },
 ];
 
@@ -63,7 +63,7 @@ jobData.map((job) => {
   // Populate the div with job data
   jobCard.innerHTML = `
       <div class="job-details">
-        <h2><a href="${job.url}" target="_blank" class='job-title'>${job.title}</a></h2>
+        <h2><a href="${job.url}" class='job-title'>${job.title}</a></h2>
         <p class="company">${job.company}</p>
         <span class="business-area">${job.businessArea}</span>
         <div class="location-and-apply">

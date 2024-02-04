@@ -1,0 +1,104 @@
+.hero-section.services {
+    position: relative;
+    height: 390px;
+    padding-top: 70px;
+    overflow: hidden;
+    background-position: 0px 0px, 50% 33%;
+    background-size: auto, cover;
+    background-repeat: repeat, no-repeat;
+    background-attachment: scroll, scroll;
+  }
+  
+  .content-wrapper {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .header-box {
+    margin-top: 10%;
+    text-align: center;
+    
+  }
+  
+  .heading-1.large {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.48);
+    font-family: 'montserrat';
+  }
+  
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 0;
+     
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+    z-index: 0;
+}
+.section-header {
+    margin: 15px 25px 0px 25px;
+
+}
+.section-header h2 {
+    font-size: 32px;
+    color: #3c4858;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 15px;
+    font-family: 'montserrat';
+  }
+  
+   
+  
+   
+  
+  .section-header p {
+    text-align: center;
+      padding: 0px 23% 20px 23% ;
+      color: #8492a6;
+      font-size: 16px;
+      
+  
+  }
+.serv-home{
+    color: white;
+    text-decoration: none;
+}
+.serv-home:hover{
+    color: #3489db;
+    text-decoration:underline;
+    transition: 0.5s;
+}
+.serv-para{
+
+    font-family: 'Roboto' !important;
+    font-size: 16.5px;
+    line-height: 1.875;
+    color:  #61676f;
+    font-weight: normal;
+}
+.serv-btn{
+    background-color: transparent;
+    border: 1px solid gray;
+}
+.serv-btn:hover{
+    background-color: #3489db;
+    border: 1px solid #3489db;
+    color: white;
+}
+ 
