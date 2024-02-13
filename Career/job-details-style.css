@@ -266,5 +266,16 @@ div .p{
   font-size: 17px;
   color: #5d6971;
 }
+.aaplybtn{
+  background-color: transparent !important;
+  border-color: 1px solid #3489db !important;
+  color: #3489db !important;
+  width: 10rem !important; 
+}
+.aaplybtn:hover{
+  background-color: #3489db !important;
+  border-color: 1px solid #3489db !important;
+  color: white !important;
+}
 
  
