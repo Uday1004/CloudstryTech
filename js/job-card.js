@@ -63,7 +63,7 @@ jobData.map((job) => {
   // Populate the div with job data
   jobCard.innerHTML = `
       <div class="job-details">
-        <h2><a href="${job.url}" class='job-title'>${job.title}</a></h2>
+        <h2><a href="${job.url}" target="_blank" class='job-title'>${job.title}</a></h2>
         <p class="company">${job.company}</p>
         <span class="business-area">${job.businessArea}</span>
         <div class="location-and-apply">
