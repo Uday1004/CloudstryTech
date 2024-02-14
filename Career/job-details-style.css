@@ -91,7 +91,7 @@ body p {
     color: #4D4C51;
     font-size: 22px;
     font-weight: bold;
-    font-family: 'montserrat','sans-serif';
+    font-family: 'Montserrat','sans-serif';
 }
   
   
@@ -219,8 +219,10 @@ body p {
     text-align: center;
       padding: 0px 75px 20px 75px ;
       color: rgb(31, 26, 26);
-      font-size: 17px;
-      font-weight: 800;
+      font-size: 18px;
+      font-family: 'Lato',sans-serif;
+       
+
   
   }  
   .page-header {
@@ -276,6 +278,21 @@ div .p{
   background-color: #3489db !important;
   border-color: 1px solid #3489db !important;
   color: white !important;
+}
+.notification {
+  position: fixed;
+  left: -100%; /* Start off screen */
+  top: 50%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  z-index: 1000;
+  transition: left 0.5s ease;
+}
+
+.notification.show {
+  left: 50%; /* Slide in from left to center */
+  transform: translateX(-50%);
 }
 
  

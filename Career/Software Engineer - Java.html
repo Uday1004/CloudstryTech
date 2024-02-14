@@ -150,13 +150,13 @@
           <div class="container">
             <div class="row mx-0 justify-content-center">
               <div class="col-md-4 col-lg-7 col-xl-6 px-lg-2 px-xl-0 px-xxl-3">
-                <!-- Adjusted width classes -->
+                <div id="msg" style="color: red; font-size: 16px;margin-bottom: 5px;">Job Application Convenience is not currently available.</div>
                 <form
                    style="box-shadow:gray 0px 1px 9px 0px;;"
                   class="w-100 rounded-1 p-4 border bg-white"
                 >
                   <label class="d-block mb-4">
-                    <span class="form-label d-block">Your name</span>
+                    <span class="form-label d-block">Your name </span>
                     <input
                       required
                       name="name"
@@ -164,10 +164,10 @@
                       class="form-control"
                       placeholder="Joe Bloggs"
                     />
-                  </label>
+                   </label>
 
                   <label class="d-block mb-4">
-                    <span class="form-label d-block">Email address</span>
+                    <span class="form-label d-block">Email address </span>
                     <input
                       required
                       name="email"
@@ -175,9 +175,9 @@
                       class="form-control"
                       placeholder="joe.bloggs@example.com"
                     />
-                  </label>
+                   </label>
                   <label class="d-block mb-4">
-                    <span class="form-label d-block">Phone Number</span>
+                    <span class="form-label d-block">Phone Number </span>
                     <input
                       required
                       name="tel"
@@ -185,11 +185,12 @@
                       class="form-control"
                       placeholder="xxxxx xxx17"
                     />
+                     
                   </label>
 
                   <label class="d-block mb-4">
-                    <span class="form-label d-block">Job Type</span>
-                    <select required name="experience" class="form-select">
+                    <span class="form-label d-block">Job Type </span>
+                    <select required name="job" class="form-select">
                       <option>Software Support Engineer</option>
                       <option>Software Engineer - Java</option>
                       <option>Senior Software Engineer</option>
@@ -201,7 +202,7 @@
                   </label>
 
                   <label class="d-block mb-4">
-                    <span class="form-label d-block">Years of experience</span>
+                    <span class="form-label d-block">Years of experience </span>
                     <select required name="experience" class="form-select">
                       <option>Less than a year</option>
                       <option>1 - 2 years</option>
@@ -214,7 +215,7 @@
 
                   <label class="d-block mb-4">
                     <span class="form-label d-block"
-                      >Tell us more about yourself</span
+                      >Tell us more about yourself </span
                     >
                     <textarea
                       name="message"
@@ -222,10 +223,10 @@
                       rows="3"
                       placeholder="What motivates you?"
                     ></textarea>
-                  </label>
+                   </label>
 
                   <label class="d-block mb-4">
-                    <span class="form-label d-block">Upload Your Resume</span>
+                    <span class="form-label d-block">Upload Your Resume </span>
                     <input
                       required
                       name="cv"
@@ -233,16 +234,21 @@
                       class="form-control"
                     />
                   </label>
-
+ 
                   <div class="mb-3">
                     <button
+                      id="apply-btn"
                       type="submit"
                       class="btn btn-primary px-3 rounded-3 aaplybtn"
+                      onclick="validateform()"
+                       
                     >
                       Apply
                     </button>
+                     
                   </div>
                 </form>
+                
               </div>
             </div>
           </div>
@@ -314,12 +320,18 @@
             }
           };
         </script>
+        <!-- <script>
+           document.getElementById("apply-btn").addEventListener("click", function () {
+        alert("Thank you for applying!"); // Show alert message when the "Apply" button is clicked
+    });
+        </script> -->
         <script
           src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
           integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
           crossorigin="anonymous"
         ></script>
-        <script src="/js/validateform.js"></script>
+        <script src="valid.js"></script>
+         
       </body>
     </html>
   </body>

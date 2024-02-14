@@ -21,13 +21,13 @@ const jobData = [
     location: "Chicago | USA",
     url: "https://www.linkedin.com/jobs/view/3824269667/",
   },
-  {
-    title: "Senior Quality Analyst",
-    company: "Software Testing & QA",
-    businessArea: "Technology",
-    location: "Indore | India",
-    url: "Career/senior quality analyst.html",
-  },
+  // {
+  //   title: "Senior Quality Analyst",
+  //   company: "Software Testing & QA",
+  //   businessArea: "Technology",
+  //   location: "Indore | India",
+  //   url: "Career/senior quality analyst.html",
+  // },
   {
     title: "Software Engineer - Nodejs/Angular",
     company: "Full-Stack Web Development",
