@@ -5,14 +5,14 @@ const jobData = [
     company: "Information Technology",
     businessArea: "Technology",
     location: "Indore | India",
-    url:  "Career/SoftwareSupportEngineer.html",
+    url:  "Career/SoftwareSupportEngineer",
   },
   {
     title: "Software Engineer - Java",
     company: "Software Development",
     businessArea: "Technology",
     location: "Indore | India",
-    url: "Career/Software Engineer - Java.html",
+    url: "Career/Software Engineer - Java",
   },
   {
     title: "Senior Software Engineer",
@@ -33,21 +33,21 @@ const jobData = [
     company: "Full-Stack Web Development",
     businessArea: "Technology",
     location: "Indore | India",
-    url:"Career/Software Engineer-NodejsAngular.html",
+    url:"Career/Software Engineer-NodejsAngular",
   },
   {
     title: "Dev Ops Engineer - Google Cloud",
     company: "DevOps Engineer",
     businessArea: "Technology",
     location: "Indore | India",
-    url: "Career/Dev Ops Engineer - Google Cloud.html",
+    url: "Career/Dev Ops Engineer - Google Cloud",
   },
   {
     title: "Data Engineer",
     company: "Data Engineering",
     businessArea: "Technology",
     location: "Indore | India",
-    url: "Career/data engineer.html",
+    url: "Career/data engineer",
   },
 ];
 
